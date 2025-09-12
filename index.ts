@@ -2,12 +2,13 @@
 import { PrismaClient } from './generated/prisma'
 const prisma = new PrismaClient()
 async function main() {
+
 //    console.log("Hello from Prisma!!!"); 
 
 // const result = await prisma.user.create({
 //     data: {
-//         name: "Mir Miran",
-//         email: "miran@gmail.com",
+//         name: "Mahin",
+//         email: "mahin@gmail.com",
 //         profilePhoto: "https://isbsp.daffodilvarsity.edu.bd/beautiful-bangladesh/"
 //     }
 // })
@@ -72,16 +73,16 @@ async function main() {
 // })
 // console.log(deleteUser);
 
-const deleteUser = await prisma.user.deleteMany({
-    where: {
-        id: {
-            lt: 3
-        }
-    }
-})
-console.log(deleteUser);
+// const deleteUser = await prisma.user.deleteMany({
+//     where: {
+//         id: {
+//             lt: 3
+//         }
+//     }
+// })
+// console.log(deleteUser);
 
-// console.log(await prisma.user.findMany());
+// console.log(await prisma.user.deleteMany());
 
 }
 
